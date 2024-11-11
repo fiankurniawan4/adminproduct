@@ -13,7 +13,7 @@ Route::middleware('auth')->group(function () {
     Route::view('profile', 'profile')
         ->name('profile');
 
-    Route::view('dashboard/product', 'dashboard/product/product')
+    Route::view('dashboard/product', 'dashboard/product/home')
         ->name('dashboard.product.index');
 
     Route::view('dashhboard/product/add', 'dashboard/product/tambah')
@@ -22,7 +22,7 @@ Route::middleware('auth')->group(function () {
     Route::view('dashhboard/product/edit/{id}', 'dashboard/product/edit')
         ->name('dashboard.product.edit');
 
-    Route::view('dashhboard/kategori', 'dashboard/kategori/kategori')
+    Route::view('dashhboard/kategori', 'dashboard/kategori/home')
         ->name('dashboard.kategori.index');
 
     Route::view('dashhboard/kategori/add', 'dashboard/kategori/tambah')

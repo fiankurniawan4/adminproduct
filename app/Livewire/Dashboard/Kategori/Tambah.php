@@ -2,7 +2,7 @@
 
 namespace App\Livewire\Dashboard\Kategori;
 
-use App\Livewire\Forms\AddKategoriForm;
+use App\Livewire\Forms\kategori\AddKategoriForm;
 use Livewire\Component;
 
 class Tambah extends Component

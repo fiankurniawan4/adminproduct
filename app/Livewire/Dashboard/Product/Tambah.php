@@ -3,7 +3,7 @@
 namespace App\Livewire\Dashboard\Product;
 
 use Livewire\Component;
-use App\Livewire\Forms\AddProductForm;
+use App\Livewire\Forms\product\AddProductForm;
 use App\Models\Kategori;
 
 class Tambah extends Component

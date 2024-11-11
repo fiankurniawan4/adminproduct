@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Livewire\Forms;
+namespace App\Livewire\Forms\product;
 
 use App\Models\Product;
 use Livewire\Attributes\Rule;
