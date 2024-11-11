@@ -3,7 +3,7 @@
         <div class="flex flex-col gap-2 mb-2">
             <span for="nama">Masukkan Nama Product</span>
             <input type="text" wire:model='editProduct.nama' id="nama" placeholder="Nama Product..." class="form-input" required />
-            @error('nama')
+            @error('editProduct.nama')
                 <span class="text-danger">{{ $message }}</span>
             @enderror
         </div>
@@ -11,7 +11,7 @@
             <span for="harga">Masukkan Harga Product</span>
             <input type="number" wire:model='editProduct.harga' min="1000" id="harga" placeholder="Harga Product..." class="form-input"
                 required />
-            @error('harga')
+            @error('editProduct.harga')
                 <span class="text-danger">{{ $message }}</span>
             @enderror
         </div>
@@ -19,7 +19,7 @@
             <span for="stok">Masukkan Stok Product</span>
             <input type="number" wire:model='editProduct.stok' min="0" id="stok" placeholder="Stok Product..." class="form-input"
                 required />
-            @error('stok')
+            @error('editProduct.stok')
                 <span class="text-danger">{{ $message }}</span>
             @enderror
         </div>

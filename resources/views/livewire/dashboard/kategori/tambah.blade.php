@@ -3,7 +3,7 @@
         <div class="flex flex-col gap-2 mb-2">
             <span for="nama">Masukkan Nama Kategori</span>
             <input wire:model='addKategori.nama' type="text" id="nama" placeholder="Nama Kategori..." class="form-input" required />
-            @error('nama')
+            @error('addKategori.nama')
                 <span class="text-danger">{{ $message }}</span>
             @enderror
         </div>
