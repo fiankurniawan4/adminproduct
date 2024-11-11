@@ -14,7 +14,7 @@ class EditProduct extends Form
     public $kategori_id = 0;
 
     protected $rules = [
-        'nama' => 'required|string',
+        'nama' => 'required|string|unique:products,nama',
         'harga' => 'required|numeric|regex:/^[0-9]+$/',
         'stok' => 'required|integer|min:0',
         'kategori_id' => 'required|exists:kategoris,id',

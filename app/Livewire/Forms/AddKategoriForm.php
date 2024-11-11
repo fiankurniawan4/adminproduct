@@ -10,7 +10,7 @@ class AddKategoriForm extends Form
 {
     public string $nama = '';
     protected $rules = [
-        'nama' => 'required|string'
+        'nama' => 'required|string|unique:kategoris,nama'
     ];
 
     public function store() {
